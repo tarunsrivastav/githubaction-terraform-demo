@@ -22,3 +22,11 @@ resource "aws_instance" "web" {
     Name = "FirstHelloWorld"
   }
 }
+
+resource "aws_s3_bucket" "terraformdemobucket" {
+  bucket = "githubaction-terraform-demo"
+
+  tags = {
+    Name = "githubaction-terraform-demo"
+  }
+}
